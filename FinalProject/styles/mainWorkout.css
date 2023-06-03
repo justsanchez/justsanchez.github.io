@@ -1,0 +1,311 @@
+/*Alvaro Sanchez*/
+
+html{
+    color: white;
+    background-color: #282828;
+}
+
+body{
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    /*background-color: #adbde3;*/
+    border-radius: .5%;   /*making the borders curvy*/
+    padding: 5px 5px;
+}
+/*removing the underline*/
+#main_nav ul li{
+    list-style-type: none; /*removes the bullests*/
+    text-decoration: none; /*removes overline*/
+}
+
+.mainContainer{
+
+    text-align: center;
+}
+
+#workouts_nav ul li{
+    list-style-type: none; /*removes the bullests*/
+    text-decoration: none; /*removes overline*/
+}
+
+/*be able to use innerHTML*/
+
+.workoutHeadings{
+    text-align: center;
+    border-bottom: solid #adbde3;
+    color: white;
+
+}
+
+
+.container2{
+    border-top: solid #adbde3;
+    border-bottom: solid #adbde3;
+    display: flex; /* set display to flex */
+    justify-content: space-evenly; /* center the items horizontally */
+    padding: 10px 0; /* add padding */
+}
+
+
+
+.container1{
+    /*the very top column*/
+    width: 100%;
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(90px, auto);
+    border-radius: 10px;
+}
+
+.Main_heading{
+    margin: 16px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
+    align-items: center;
+
+    font-size: 2.3vw; /* adjust the value as needed */
+
+}
+
+
+
+
+header h2 a {
+
+    color: white;
+    font-style: inherit;
+    font-size: 200%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+
+
+/*for the main icon*/
+/*body header img{*/
+/*    height: 6%;*/
+/*    width: 6%;*/
+/*    float: left;*/
+/*    padding: .9375em 2.5%;*/
+/*    margin: -1.25em 0;*/
+
+/*}*/
+
+#main_nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    /*border-bottom: 1px solid darkblue;*/
+}
+
+aside{
+    /*margin is to best effort to center it*/
+    margin: 12px;
+    grid-column:2/3;
+    grid-row: 1/2;
+
+}
+
+
+#main_nav ul li{
+    padding: 5px 7px;
+    margin: 5px 7px;
+}
+
+
+
+
+
+#main_nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+#main_nav a:hover h2{
+    border-bottom: none;
+}
+#main_nav a:hover {
+    /*this line below just makes it wrap around the
+    the text*/
+    width: 100%;
+    color: #adbde3 ;
+}
+#workouts_nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+#workouts_nav a:hover h2{
+    border-bottom: none;
+}
+#workouts_nav a:hover {
+    /*this line below just makes it wrap around the
+    the text*/
+    width: 100%;
+    color: #adbde3 ;
+}
+
+
+
+
+
+
+.current{
+    border-bottom: .1em solid #A9A9A9;
+}
+
+
+
+footer{
+
+    text-align: center;
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    /*background-color: #585858;*/
+    border-top: solid #A9A9A9 1px;
+
+}
+
+.container{
+    color: black;
+    display: grid;
+    /* using fractions (recommended) */
+    grid-template-columns: 2fr .9fr;
+    /*100px minimum and auto for the max*/
+    grid-auto-rows: minmax(100px, auto);
+    /*grid gap is used to separate the items*/
+    grid-gap: 1em;
+    /*max-width*/
+    /*alternative*/
+    /*grid-template-areas:
+    'repeat based on number of columns you assign it to'
+        "head head head"
+        "..."
+        "main"
+        "footer";*/
+
+    /*can place a period to have a empty spot*/
+
+    /*can use default*/
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+/*changed color here*/
+.container section{
+    color: white;
+    background-color: white;
+    padding:1em;
+    border-radius: 7%;   /*making the borders curvy*/
+
+}
+
+.container section:nth-child(odd){
+    background-color: #0E315C;
+    border-radius: 0%;   /*making the borders curvy*/
+
+
+}
+
+.container>section>img{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    /*mix-blend-mode: color-burn;*/
+}
+
+.box1{
+    /*align-self: start;*/
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.box2{
+    /*align-self: self-end;*/
+    grid-column: 3;
+    grid-row: 1/3;
+
+}
+.box3{
+    /*justify-self: end;*/
+    /*start at 2 and end at four*/
+    grid-column: 2/4;
+    grid-row: 3;
+
+}
+
+.box4{
+    /*align-self: auto;*/
+
+    /*can overlap*/
+    grid-column: 1;
+    grid-row: 2/4;
+
+}
+#hide2{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+/* Media query for devices with a max width of 768px */
+@media screen and (max-width: 900px) {
+aside ul {
+    display: none;
+  }
+aside p{
+    display: none;
+  }
+
+.hide {
+    color: white;
+    display: block;
+}
+    body{
+    font-size: 1.7vw;
+}
+
+}
+
+
+@media screen and (max-width: 720px) {
+aside ul {
+    display: none;
+  }
+aside p {
+    display: none;
+  }
+
+.hide {
+    display: block;
+}
+    body{
+    font-size: 2.1vw;
+}
+}
+@media screen and (max-width: 580px) {
+    .Main_heading{
+    display: none;
+}
+        #hide2{
+        display: block;
+        text-align: center;
+        font-size: 5vw;
+    }
+    #hide3{
+        display: none;
+    }
+
+}
+
+

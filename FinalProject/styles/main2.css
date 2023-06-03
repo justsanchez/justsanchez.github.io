@@ -1,0 +1,173 @@
+/*Alvaro Sanchez*/
+
+html{
+    color: white;
+    background-color: #282828;
+}
+
+body{
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    /*background-color: #adbde3;*/
+    border-radius: 1%;   /*making the borders curvy*/
+    padding: 5px 5px;
+}
+/*removing the underline*/
+#main_nav ul li{
+    list-style-type: none; /*removes the bullests*/
+    text-decoration: none; /*removes overline*/
+}
+
+.container1{
+    /*the very top column*/
+    width: 100%;
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(90px, auto);
+    border-radius: 10px;
+}
+
+#Main_heading{
+    margin: 16px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+header h2 a {
+    color: white;
+    font-style: inherit;
+    font-size: 200%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+
+
+/*for the main icon*/
+/*body header img{*/
+/*    height: 6%;*/
+/*    width: 6%;*/
+/*    float: left;*/
+/*    padding: .9375em 2.5%;*/
+/*    margin: -1.25em 0;*/
+
+/*}*/
+#main_nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    /*border-bottom: 1px solid darkblue;*/
+}
+
+main{
+    /*margin is to best effort to center it*/
+    margin: 12px;
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+
+
+
+#main_nav ul li{
+    padding: 5px 7px;
+    margin: 5px 7px;
+}
+
+
+
+
+
+#main_nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+#main_nav a:hover h2{
+    border-bottom: none;
+}
+#main_nav a:hover {
+    /*this line below just makes it wrap around the
+    the text*/
+    width: 100%;
+    color: #adbde3 ;
+}
+
+
+.current{
+    border-bottom: .1em solid #A9A9A9;
+}
+
+footer{
+
+    text-align: center;
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    /*background-color: #585858;*/
+    border-top: solid #A9A9A9 1px;
+
+}
+
+.container{
+    display: grid;
+    /* using fractions (recommended) */
+    grid-template-columns: repeat(3,2fr 3fr);
+
+    /*
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    */
+
+    /*same effect as above*/
+    grid-gap: 1em;
+
+    /*grid-auto-rows: 180px;*/
+
+    /*going to stretch (FLEXIBLE) content if
+    needed
+    ex. when text at a point gets out of the box
+    , it'll auto-stretch itself (just to that
+    particular row) */
+    grid-auto-rows: minmax(100px, auto);
+
+
+
+}
+
+.container p{
+    background-color: lightgray;
+    padding:1em;
+}
+
+.container p:nth-child(odd){
+    background-color: lightsalmon;
+
+}
+
+/*bro you can convert text into a grid, to
+separate just use sections
+
+16:00
+
+last left off on 17:48
+
+*/
+/*.nested{*/
+/*    display: grid;*/
+/*    !* using fractions (recommended) *!*/
+/*    grid-template-columns: repeat(1,1fr);*/
+/*    grid-auto-rows: minmax(70px);*/
+/*    grid-gap: 1em;*/
+
+/*}*/
+
+
+

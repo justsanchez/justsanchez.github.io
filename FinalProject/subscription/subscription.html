@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--declares english-->
+<head>
+	<link rel="shortcut icon" href="../images/fitness.ico">
+	<!-- Alvaro Sanchez-->
+	<meta charset="utf-8">
+<!--try to format title to the left and the nav to
+	the right using grid formatting in CSS (ch.10)-->
+	<title>Muscle Aid</title>
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster">
+
+<!--placeholder for when making the tab icon-->
+<!--	<link rel="shortcut icon" href="">-->
+</head>
+
+
+
+<body>
+	<header class="container1">
+<!--		<a href="placeholder">-->
+<!--		<img src= "placeholder" alt="logo">-->
+<!--		</a>-->
+
+<!--	logo from Icongeek26-->
+<!--		<img src= "images/muscles.png" alt="Muscle Logo (Icongeek26)">-->
+		<h2 style="font-family: Lobster" id="hide3" class="Main_heading"><a href="../index.htm" >Workout Aid</a></h2>
+		<h2 style="font-family: Lobster" id="hide2" class="Main_heading"><a href="../index.htm" >WA</a></h2>
+
+
+
+
+	<aside>
+		<nav id="main_nav">
+
+		<ul>
+	<!--	can potentially have one tab of "workouts"
+			and have a second tier of choices such as
+			upper, core. lower body-->
+			<li><a href="../index.htm">Home</a></li>
+			<li><a href="../workouts/index.html">Workouts</a></li>
+			<li><a href="../tips/index.html" >Tips</a></li>
+			<li><a href="subscription.html" class="current">Subscribe</a></li>
+
+
+
+		</ul>
+
+	</nav>
+	</aside>
+	</header>
+
+		<aside id="asideA">
+		</aside>
+
+											<!--added section-->
+
+				<form action="confirmation.html" method="get">
+			<section >
+		<h1 class="centerText"> Daily workout tips subscription form</h1>
+		<p class="centerText"> Filling out a daily workout tips form is a useful way to stay motivated and focused on your fitness goals.
+			<br>(Asterisks (*) indicate required entries.)</p>
+
+		<fieldset id="first"><legend>Tell us about yourself</legend>
+
+<!--			//using for and id -->
+			<label for="name">*Full name</label>
+			<input type="text" name="name" id="name">
+			<br>
+			<label for="email">*Email</label>
+			<input type="email" name="email" id="email">
+			<br>
+			<label for="gender">Gender</label>
+			<select name="Gender" id="gender">
+			<option>Select your gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			</select>
+
+		</fieldset>
+
+
+<!--Then add the form elements using labels.
+Make sure each form control uses a name attribute.
+In order for the provided styles to work, in the first fieldset,
+you must use the option for labels that matches the for attribute
+in the label element with an id attribute in the input/select
+elements. You can use either option in the other fieldsets.-->
+
+
+		<fieldset><legend>Lifestyles and goals</legend>
+
+				<p>Do you struggle in staying motivated? </p>
+
+				<label for="Yes">
+					<input type="radio" name="lifestyle" value="a" id="Yes">Yes
+				</label>
+
+				<label for="No">
+				<input type="radio" name="lifestyle" value="mod" id="No">No
+					</label>
+
+				<label for="RNS">
+				<input type="radio" name="lifestyle" value="s" id="RNS">Rather not say<br>
+					</label>
+				<br>
+				<p>What are your workout goals? </p>
+				<label for="muscle">
+				<input type="radio" name="goals" value="m" id="muscle">Gain Muscle (Hypertrophy)
+					</label>
+
+				<label for="stronger">
+				<input type="radio" name="goals" value="s" id="stronger">Get Stronger
+					</label>
+
+				<label for="lose">
+				<input type="radio" name="goals" value="los" id="lose">Lose Weight<br>
+					</label>
+
+		</fieldset>
+
+		<fieldset><legend>Workout enhancements</legend>
+			<p>Do you have take any of the following? (Select all that appy)</p>
+
+			<label for="Protein">
+				<input type="checkbox" name="protein" id="Protein"> Protein
+			</label>
+			<label for="Bulk-Protein">
+				<input type="checkbox" name="bulk-Protein" id="Bulk-Protein"> Bulk Protein
+			</label>
+			<label for="Pre-workout">
+				<input type="checkbox" name="pre-workout" id="Pre-workout"> Pre-workout
+			</label>
+			<label for="Creatine">
+				<input type="checkbox" name="creatine" id="Creatine"> Creatine <br>
+			</label>
+
+			<label for="Other">
+				<input type="checkbox" name="other" id="Other"> Other
+			</label>
+			<br>
+			<textarea name="other"></textarea>
+
+		</fieldset>
+
+		<fieldset><legend>Confirm</legend>
+
+
+			<input type="submit" value="Submit Now">
+			<input type="reset" value="Start Over" >
+
+		</fieldset>
+
+
+
+
+
+
+				</section>
+				</form>
+
+		<aside id="asideB">
+		</aside>
+
+									<!--fixed the footer-->
+	<footer>
+		<p> &copy; 2023 Alvaro Sanchez  </p>
+		<p>Email: ajs1696@uncw.edu Phone: 910-799-3650</p>
+	</footer>
+
+</body>
+</html>

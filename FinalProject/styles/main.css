@@ -1,0 +1,329 @@
+/*Alvaro Sanchez*/
+/*Home Page CSS*/
+
+
+html{
+    color: white;
+    background-color: #282828;
+}
+
+body{
+
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    /*background-color: #adbde3;*/
+    border-radius: 1%;   /*making the borders curvy*/
+    padding: 5px 5px;
+}
+
+/*removing the underline*/
+#main_nav ul li{
+    list-style-type: none; /*removes the bullests*/
+    text-decoration: none; /*removes overline*/
+}
+
+.workoutTabs {
+    text-decoration: none; /*removes overline*/
+    color: white;
+}
+#disclaimer{
+    color: darkred;
+
+}
+
+
+.container1{
+    background-color: #0A192F;
+    /*the very top column*/
+    width: 100%;
+    /*Navy Blue here*/
+    /*background-color: #0A192F;*/
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(90px, auto);
+    border-radius: 10px;
+}
+
+.Main_heading{
+    margin: 16px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 2.3vw; /* adjust the value as needed */
+}
+
+
+
+
+header h2 a {
+    color: white;
+    font-style: inherit;
+    font-size: 200%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+#main_nav ul{
+    /*removing the default margins and padding*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    /*border-bottom: 1px solid darkblue;*/
+}
+
+aside{
+    /*margin is to best effort to center it*/
+    margin: 12px;
+    grid-column:2/3;
+    grid-row: 1/2;
+
+}
+
+.centerText{
+    text-align: center;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+#main_nav ul li{
+    padding: 5px 7px;
+    margin: 5px 7px;
+}
+
+
+
+
+
+#main_nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#main_nav a:hover h2{
+    border-bottom: none;
+}
+#main_nav a:hover {
+    /*this line below just makes it wrap around the
+    the text*/
+    width: 100%;
+    color: #adbde3 ;
+    }
+
+
+
+.imgcontainer {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    background-image: url("../images/Chris-Bumstead-2.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+
+
+}
+
+.imgcontainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+    rgba(0, 0, 0, 0.7)20%, rgba(0, 0, 0, 0)100%);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+
+.imgcontainer > h1 {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 24%;
+    top: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+.largertext{
+    font-size: 170%;
+}
+
+
+
+.mainContainer{
+
+    text-align: center;
+}
+
+
+
+.current{
+    border-bottom: .1em solid #A9A9A9;
+}
+
+/*#main_nav ul li ul{*/
+/*    display: none;*/
+/*}*/
+
+/*#main_nav ul li:hover > ul{*/
+/*    background-color: #d7ddf5;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    border-bottom: none;*/
+/*}*/
+
+
+
+footer{
+    text-align: center;
+    /*Navy Blue here*/
+    background-color: #0A192F;
+    /*background-color: #585858;*/
+    border-top: solid #A9A9A9 1px;
+}
+
+.container{
+    height: 100%;
+
+    display: grid;
+    /*half and half*/
+    /*grid-template-columns: 50% 50%;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*100px minimum and auto for the max*/
+    grid-auto-rows: minmax(auto, auto);
+
+    /*
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    */
+
+    /*same effect as above*/
+    grid-gap: 1em;
+
+
+
+}
+
+.container p{
+    /*background-color: lightgray;*/
+    text-align: center;
+    padding:1em;
+}
+
+
+.container> a{
+    color: white;
+    list-style-type: none; /*removes the bullests*/
+    text-decoration: none; /*removes overline*/
+}
+
+.container >.workoutimgs > a> img {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.workoutimgs img {
+    transition: transform 0.2s ease-in-out;
+
+
+
+}
+
+.workoutimgs img:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 5px rgba(5, 25, 90, 0.7);
+
+}
+
+.container p:nth-child(odd){
+    /*background-color: lightblue;*/
+}
+
+#subscribeSection{
+    text-align: center;
+}
+#subscribeSection a{
+    color: RGB(255, 127, 80);
+}
+
+.hide{
+    display: none;
+}
+#hide2{
+    display: none;
+}
+/*720*/
+@media screen and (max-width: 990px) {
+
+    .imgcontainer > h1 {
+        text-align: center;
+        font-size: 150%;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        margin: 0;
+        transform: translate(-25%, -25%);
+        width: 100%;
+    }
+    body{
+    font-size: 1.7vw;
+}
+
+}
+@media screen and (max-width: 720px) {
+        .imgcontainer{
+        height: 250px;
+}
+    .hide {
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 580px) {
+    .Main_heading{
+    display: none;
+}
+        #hide2{
+        display: block;
+        text-align: center;
+        font-size: 5vw;
+    }
+    #hide3{
+        display: none;
+    }}
+/*when it gets to the point when i need to reduce to smaller window
+    - change the main title (of the top left) to just WA instead of
+     it being WorkoutAid*/

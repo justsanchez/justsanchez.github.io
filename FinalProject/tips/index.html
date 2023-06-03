@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--declares english-->
+<head>
+	<link rel="shortcut icon" href="../images/fitness.ico">
+	<!-- Alvaro Sanchez-->
+	<meta charset="utf-8">
+<!--try to format title to the left and the nav to
+	the right using grid formatting in CSS (ch.10)-->
+	<title>Workout Aid</title>
+	<link rel="stylesheet" href="../styles/main3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster">
+
+<!--placeholder for when making the tab icon-->
+<!--	<link rel="shortcut icon" href="">-->
+</head>
+
+
+
+<body>
+	<header class="container1">
+<!--		<a href="placeholder">-->
+<!--		<img src= "placeholder" alt="logo">-->
+<!--		</a>-->
+
+<!--	logo from Icongeek26-->
+<!--		<img src= "images/muscles.png" alt="Muscle Logo (Icongeek26)">-->
+		<h2 style="font-family: Lobster" id="hide3" class="Main_heading"><a href="../index.htm" >Workout Aid</a></h2>
+		<h2 style="font-family: Lobster" id="hide2" class="Main_heading"><a href="../index.htm" >WA</a></h2>
+
+
+
+
+	<aside>
+		<nav id="main_nav">
+
+		<ul>
+	<!--	can potentially have one tab of "workouts"
+			and have a second tier of choices such as
+			upper, core. lower body-->
+			<li><a href="../index.htm">Home</a></li>
+			<li><a href="../workouts/index.html">Workouts</a></li>
+			<li><a href="index.html" class="current">Tips</a></li>
+			<li><a href="../subscription/subscription.html">Subscribe</a></li>
+
+
+
+		</ul>
+
+	</nav>
+	</aside>
+	</header>
+
+		<aside id="asideA">
+		</aside>
+
+			<h1 class="workoutHeadings">Tips</h1>
+
+											<!--added section-->
+		<aside class="container">
+			<section class="center">
+<h3>Focus on compound exercises</h3>
+				<p>Compound exercises like squats, deadlifts, and bench presses work multiple muscle groups at once, leading to more muscle growth and hypertrophy.
+			</p>
+			</section>
+			<section class="center">
+<h3>Lift heavy weights </h3>
+	<p>To promote muscle hypertrophy, you need to lift weights that are heavy enough to challenge your muscles. Aim for weights that allow you to complete 7-12 reps with good form.
+			</p>
+			</section>
+			<section class="center">
+<h3>Use progressive overload: </h3>
+	<p>Gradually increase the weight you lift over time to continually challenge your muscles and promote hypertrophy. Notting down your personal record reps weight can help with this tip
+			</p>
+			</section>
+			<section class="center">
+<h3>Get enough rest </h3>
+				<p>Adequate rest and recovery is essential for muscle growth. Make sure to take rest days and get enough sleep to support your body's muscle-building processes.
+			</p>
+			</section>
+			<section class="center">
+<h3>Stay consistent:</h3>
+				Consistency is key when it comes to promoting muscle hypertrophy. Stick to a regular workout schedule and follow your nutrition plan consistently to see results over time.
+			</section>
+			<section class="center">
+<h3>Follow a balanced nutrition plan:</h3>
+				Eating a balanced diet that includes enough protein, carbohydrates, and healthy fats is crucial for supporting muscle hypertrophy. Consider consulting with a registered dietitian to create a nutrition plan that supports your goals.
+			</section>
+
+
+
+
+		</aside>
+		<aside class="containerTable">
+			<section class="center">
+				<h3>
+					Eating the right amount of high-protein foods can be a hassle, especially when you're on a budget. But the good news is that there are plenty of affordable options available that are also high in protein.
+				</h3>
+				<h4>
+On the right there's a list of affordable, high-protein foods that you can easily find at your local grocery store or market. From eggs to lentils to canned tuna, these foods are not only cost-effective but also delicious and nutritious.
+				</h4>
+			</section>
+			<section>
+
+
+			<table>
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Protein (g) per 100g</th>
+      <th>Cost per 100g (USD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eggs</td>
+      <td>13</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Tuna (canned)</td>
+      <td>25</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Chicken breast (frozen)</td>
+      <td>22</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Cottage cheese</td>
+      <td>11</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Greek yogurt</td>
+      <td>10</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>Lentils (dried)</td>
+      <td>25</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Beans (canned)</td>
+      <td>7</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Peanut butter</td>
+      <td>25</td>
+      <td>0.20</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+		</aside>
+				<h1 class="workoutHeadings">BMI calculator</h1>
+
+<aside class="container2">
+
+		<h3>
+A BMI calculator estimates body mass index, which measures body fat based on height and weight. It's vital to overall health, identifying potential health risks associated with being underweight, overweight, or obese. Calculate BMI and assess health risks with ease.		</h3>
+
+	<aside id="bmiCalc">
+	<h3>Enter Data Here: </h3>
+
+	<form>
+		<label for="height">Height (cm):</label>
+		<input type="number" id="height" name="height" placeholder="Enter height (cm)" required>
+
+		<label for="weight">Weight (kg):</label>
+		<input type="number" id="weight" name="weight" placeholder="Enter weight (kg)" required>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button type="button" onclick="calculateBMI()">Calculate BMI</button>
+		<br>
+		<br>
+
+		<div id="result"></div>
+	</form>
+</aside>
+	<script src="../script.js"></script>
+
+
+
+	</aside>
+									<!--fixed the footer-->
+	<footer>
+		<p> &copy; 2023 Alvaro Sanchez  </p>
+		<p>Email: ajs1696@uncw.edu Phone: 910-799-3650</p>
+	</footer>
+
+</body>
+</html>
